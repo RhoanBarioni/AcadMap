@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: $main_font, sans-serif;
+    color: $text_color_primary;
+
+    img{
+        pointer-events: none;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 1px;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background: green;
+    border-radius: 10px;
+}
+
+// BODY
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-color: $background_color_primary;
+    color: $text_color_primary;
+}
+
+.root{
+    // background-color: yellow;
+    max-width: $max_width;
+    width: 100vw;
+    height: 100vh;
+    @include container(column, flex-start, center);
+}
