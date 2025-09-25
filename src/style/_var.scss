@@ -11,15 +11,34 @@
 }
 
 // main
+$main_font: 'Manrope';
+$max_width: 1920px;
+$min_width: 1450px;
+
+$text_color_primary: #ffffff;
+$text_color_second: black;
+
+$background_color_primary: #0e0d0f;
+$background_color_second: #aa23ff;
+$background_color_third: #ffffff;
 
 // hover
+$text_color_hover: $background_color_second;
+$background_color_hover: $background_color_third;
+
+$background_color_border_hover: #ac49f3;
+$background_color_img_hover: #9500ff;
 
 // header
 
 // body
 
 // footer
+$divider: #ffffffab;
+$color_text_footer: #dfdde6c9;
 
 //social footer
+$background_color_border: #565656;
 
 //copy
+$color_text_copy: #ffffff8e;

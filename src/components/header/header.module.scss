@@ -1,0 +1,7 @@
+header{
+    @include container(row, center, center);
+    width: 85%;
+    height: 100px;
+    background-color: green;
+    border-radius: 40px;
+}
