@@ -1,0 +1,18 @@
+main{
+    @include container(column, flex-start, center);
+    width: 100%;
+    max-width: 1340px;
+    height: 100%;
+}
+
+.row{
+    @include container(row, center, center);
+    width: 100%;
+    height: 100%;
+}
+
+.mapgraph-container{
+    @include container(column, center, center);
+    width: 100%;
+    height: 100%;
+}

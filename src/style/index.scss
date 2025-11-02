@@ -33,18 +33,19 @@ body::-webkit-scrollbar-thumb {
 // BODY
 body{
     width: 100vw;
+    max-width: $max_width;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
     overflow-x: hidden;
     background-color: $background_color_primary;
     color: $text_color_primary;
+    @include container(row, center, center);
 }
 
 .root{
     // background-color: yellow;
-    max-width: $max_width;
+    max-width: calc($max_width - 120px);
     width: 100vw;
     height: 100vh;
-    @include container(row, flex-start, center);
+    @include container(row, space-around, center);
+    padding: 35px 0px;
 }

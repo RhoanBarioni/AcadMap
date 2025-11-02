@@ -1,0 +1,108 @@
+aside{
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    @include container(column, flex-start, center);
+    background-color: $background_color_third;
+    border-radius: 35px;
+    padding: 30px;
+
+    *{
+        font-size: 1.1rem;
+    }
+    
+    a, span{
+        color: black;
+        font-weight: 500;
+    }
+
+    .logo-container{
+        width: 100%;
+        height: 50px;
+        border-radius: inherit;
+        margin-bottom: 20px;
+
+        a{
+            @include container(row, center, center);
+            width: 100%;
+            height: 100%;
+
+            img{
+                width: 100px;
+            }
+
+            span{
+                font-size: 1.3rem;
+                font-weight: 800;
+                color: $text_color_third;
+            }
+        }
+    }
+
+    .menu-container{
+        width: 100%;
+        height: 90%;
+        margin: 0 auto;
+
+        ul{
+            width: 100%;
+            height: 100%;
+            @include container(column, space-between, center);
+
+            li{
+                width: 100%;
+                height: calc(100%);
+                @include container(column, center, center);
+
+                .icon{
+                    width: 20px;
+                    margin-right: 9px;
+                }
+
+                &:hover .icon {
+                    filter: invert(100%);
+                }
+
+                a:hover{
+                    color: $text_color_primary;
+                    background-color: $background_color_hover;
+                    border-radius: 35px;
+
+                     span{
+                        color: $text_color_primary;
+                    }
+                }
+
+                &:nth-child(6){
+                    margin: 20px 0px;
+
+                    &:hover{
+                        background-color: inherit;
+
+                        a{
+                            background-color: inherit;
+                        }
+                    }
+                }
+            }
+
+            a{
+                width: 80%;
+                height: 100%;
+                @include container(row, center, center);
+                text-transform: capitalize;
+                
+                .img-info{
+                    height: 250px;
+                    border-radius: 30px;
+                    pointer-events: none;
+                }
+
+                span{
+                    text-transform: none;
+                    margin: 0px 5px;
+                }
+            }
+        }
+    }
+}
