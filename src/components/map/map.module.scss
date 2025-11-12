@@ -1,0 +1,119 @@
+.map-container{
+    width: 780px;
+    height: 100%;
+    @include container(column, center, center);
+    background-color: $background_color_third;
+    padding: 35px;
+    border-radius: 20px;
+}
+
+.map-title{
+    width: 100%;
+    height: 95px;
+    @include container(row, space-between, center);
+    margin-bottom: 15px;
+
+    .map-text{
+        width: 100%;
+        max-width: 450px;
+        @include container(column, center, flex-start);
+
+        h1{
+            color: $text_color_second;
+        }
+
+        p{
+            color: $text_color_second;
+            opacity: 68%;
+            margin-top: 8px;
+        }
+    }
+
+    .button-map{
+        width: 100%;
+        max-width: 200px;
+        height: 42px;
+        background-color: $background_color_hover;
+        margin: 0 auto;
+        border-radius: 15px;
+
+        a{
+            width: 100%;
+            height: 100%;
+            font-size: 0.89rem;
+            font-weight: 600;
+            @include container(row, center, center);
+
+            img{
+                max-width: 15px;
+                transform: rotate(-45deg);
+                filter: invert(100%);
+                margin-left: 7px;
+            }
+
+            &:hover{
+                background-color: $text_color_second;
+                border-radius: 15px;
+            }
+        }
+    }
+}
+
+table{
+    width: 100%;
+    height: 300px;
+    border-collapse: separate;
+    border-spacing: 0;
+
+    thead{
+        tr{
+            width: 100%;
+            height: 35px;
+            position: relative;
+        }
+
+        tr th{
+            color: $text_color_primary;
+            text-transform: capitalize;
+            font-size: 0.95rem;
+            background-color: $text_color_second;
+            font-weight: 500;
+        }
+
+        tr th:first-child{
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        tr th:last-child{
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+
+            &::after{
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+            }
+        }
+
+        tr th::after{
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 60%;
+            background-color: $text_color_primary;
+            margin-left: 25px;
+        }
+    }
+
+    tbody{
+        width: 100%;
+
+        tr td{
+            color: $text_color_second;
+            text-align: center;
+            border-bottom: 1px solid $text_color_second;
+        }
+    }
+}

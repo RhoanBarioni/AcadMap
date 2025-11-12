@@ -3,6 +3,7 @@ import styles from '../style/home.module.scss';
 // components
 import Menu from '../components/menu/menu.jsx';
 import Header from '../components/header/header.jsx';
+import Map from '../components/map/map.jsx';
 
 
 function Home() {
@@ -13,7 +14,7 @@ function Home() {
         <Header />
           <div className={styles['row']}>
             <div className="mapgraph-container">
-              <Header />
+              <Map />
               <Header />
             </div>
             <div className="info-container">
