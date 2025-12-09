@@ -29,5 +29,6 @@
     "globals": "^16.2.0",
     "sass": "^1.89.2",
     "vite": "^7.0.0"
-  }
+  },
+  "homepage": "https://rhoanbarioni.github.io/AcadMap"
 }
