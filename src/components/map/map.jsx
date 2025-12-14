@@ -10,7 +10,7 @@ function Map() {
                     <h1>Mapa em tempo real</h1>
                     <p>Veja onde cada professor está no campus agora</p>
                 </div>
-                <div className={styles['button-map']}><a href="">Abrir mapa completo <img src="../src/assets/img/icon/seta.webp" alt="" /></a></div>
+                <div className={styles['button-map']}><a href="">Abrir mapa completo <img src="./img/icon/seta.webp" alt="" /></a></div>
             </div>
             <table>
                 <thead>
